@@ -1,0 +1,9 @@
+﻿ViewComponent Kullanımı
+
+ViewComponent yapısını web sitemizde sayfalarda birebir benzer işlemleri gerçekleştireceksek tekrar aynı kodları yazma yerine kullanabiliriz. 
+Bu noktada kullanım amacı partial  view'e benzer.
+Ancak .NET Core MVC tarafında partial view yapısına alternatif olarak View Component yapıları server tarafına daha az yük bindirdiği için tercih edilir.(.NET Core MVC tarafında Partial View yapısının kullanımı devam etmektedir.)
+
+Yani herhangi bir server işleminde Controller ile iletişim kurmak zorunda değildir. 
+Controller'a ihtiyaç olmasızın işlemini gerçekleştirebilir.
+Bu da partial view'lere göre avantaj sağlamaktadır.

@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Default";
+}
+@model List<CommentViewModel>
+
+<h1>View Components</h1>
+
+@foreach(var item in Model)
+{
+    <div class="be-comment-content">
+        <span class="be-comment-name">
+            <a>@item.CommentBy</a>
+        </span>
+        <span class="be-comment-time">
+            <i class="fa-solid fa-clock"></i>
+            @item.CommentTime.ToShortDateString()
+        </span>
+
+        <p class="be-comment-text">
+            @item.Comment
+        </p>
+    </div>
+}
